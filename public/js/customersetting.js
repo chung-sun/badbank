@@ -19,7 +19,8 @@ function CustomerSetting () {
   const [token, setToken] = React.useState(window.localStorage.getItem("token"));
 
   React.useEffect(() => {
-    const url = `http://localhost:3000/api/accounts/users/finduser/${userEmail}`
+    // const url = `http://localhost:3000/api/accounts/users/finduser/${userEmail}`
+    const url = `/api/accounts/users/finduser/${userEmail}`
     fetch(url)
       .then((response) => response.json())
       .then((user) => {
@@ -31,7 +32,8 @@ function CustomerSetting () {
   },[]);
 
   function handleUpdate () {
-    const url = `http://localhost:3000/account/users/settings`;
+    // const url = `http://localhost:3000/account/users/settings`;
+    const url = `/account/users/settings`;
         fetch(url, {
           method: "POST",
           body: JSON.stringify({

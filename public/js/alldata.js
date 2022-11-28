@@ -14,7 +14,8 @@ function AllData () {
   let str;
 
   React.useEffect(() => {
-    const url = 'http://localhost:3000/api/accounts/users/displayAllAccounts';
+    // const url = 'http://localhost:3000/api/accounts/users/displayAllAccounts';
+    const url = '/api/accounts/users/displayAllAccounts';
     fetch(url)
       .then((response) => response.json())
       .then((data) => {

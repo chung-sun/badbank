@@ -13,7 +13,8 @@ function Transaction () {
   const [token, setToken] = React.useState(window.localStorage.getItem("token"));
 
   React.useEffect(() => {
-    const url = `http://localhost:3000/api/accounts/users/finduser/${userEmail}`
+    // const url = `http://localhost:3000/api/accounts/users/finduser/${userEmail}`
+    const url = `/api/accounts/users/finduser/${userEmail}`
     fetch(url)
       .then((response) => response.json())
       .then((user) => {
@@ -30,7 +31,8 @@ function Transaction () {
   };
 
   function handleFetch (amount) {
-    const url = `http://localhost:3000/api/accounts/users/transactions`;
+    // const url = `http://localhost:3000/api/accounts/users/transactions`;
+    const url = `/api/accounts/users/transactions`;
         fetch(url, {
           method: "POST",
           body: JSON.stringify({

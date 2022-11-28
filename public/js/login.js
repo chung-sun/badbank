@@ -28,7 +28,8 @@ function Login () {
       if (!email) return validate('Email cannot be empty');
       if (!password) return validate('Password cannot be empty');
 
-      const url = `http://localhost:3000/api/accounts/users/login/${email}/${password}`;
+      // const url = `http://localhost:3000/api/accounts/users/login/${email}/${password}`;
+      const url = `/api/accounts/users/login/${email}/${password}`;
       fetch(url)
         .then( async (response) => {
           const isJson = response.headers.get('content-type')?.includes('application/json');
