@@ -1,0 +1,400 @@
+.container-fluid {
+  padding: 0px;
+  background-color: white;
+}
+
+.nav-link {
+  margin: 0 20px;
+}
+
+.nav-link:hover {
+  color: #041949;
+  padding-bottom: 3px;
+  border-bottom: solid 5px #1C3879;
+}
+
+.active {
+  color: #041949;
+  padding-bottom: 3px;
+  border-bottom: solid 5px #1C3879;
+}
+
+/* Home Section */
+
+.card {
+  max-width: 20rem;
+}
+
+h5,
+p {
+  text-align: center;
+}
+
+.myhome {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.img-home {
+  width: 500px;
+  height: 425px;
+  object-fit: cover;
+}
+
+.img-home-2 {
+  width: 500px;
+  height: 450px;
+  object-fit: cover;
+}
+
+.balance {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* Main Body Section */
+
+.mynavbar {
+  height: 650px;
+}
+
+/* All Data Section */
+
+.table {
+  text-align: center;
+  color: white;
+}
+
+/* Validation Status */
+
+.a.link.account-link {
+  text-align: center;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+  margin-top: 10px;
+}
+
+@keyframes blinker {
+  10% {
+    opacity: 0;
+  }
+}
+
+/* Savings page */
+
+.savings-main {
+  height: 580px;
+  margin-top: 20px;
+  color: darkolivegreen;
+}
+
+.savings-img-banner {
+  height: 400px;
+  width: 400px;
+  float: left;
+  border-radius: 50%;
+}
+
+.savings-body {
+  margin-top: 150px;
+  float: right;
+}
+
+.savings-link:hover {
+  color: white;
+}
+
+/* Checking page */
+
+.checking-main {
+  height: 580px;
+  margin-top: 20px;
+  color: darkgoldenrod;
+}
+
+.checking-img-banner {
+  height: 450px;
+  float: right;
+}
+
+.checking-body {
+  margin-top: 150px;
+}
+
+.checking-link:hover {
+  color: white;
+}
+
+/* About Us page */
+
+.about-main {
+  height: 580px;
+  margin-top: 20px;
+  color: darkgray;
+}
+
+.about-link:hover {
+  color: white;
+}
+
+.about-row {
+  margin-top: 50px;
+}
+
+.p-about {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.p-about-1 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.p-about-2 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.p-about-3 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.span-about {
+  font-size: x-small;
+}
+
+.img-about {
+  height: 200px;
+  width: 200px;
+}
+
+/* Footer Section */
+
+.footer {
+  text-align: center;
+  background-color: lightcyan;
+  color: #082872;
+  height: 430px;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.myrow {
+  text-decoration: none;
+  max-width: 40%;
+  padding: 25px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #082872;
+}
+
+.p-footer {
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.p-footer-1 {
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.p-footer-2 {
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.span-footer {
+  font-size: x-small;
+}
+
+.img-footer {
+  height: 20px;
+  width: 20px;
+}
+
+/* Create Account */
+.card-link.text-center {
+  padding-top: 25px;
+  margin: 0;
+}
+
+/* Info Section */
+
+.myinfo {
+  text-align: center;
+  height: 500px;
+  padding: 0;
+}
+
+.img-info {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+form {
+  padding-bottom: 0;
+}
+
+/* @media only screen and (max-width: 500px) {
+  .footer {
+    height: 100%;
+  }
+
+  .myinfo {
+    height: 170px;
+  }
+
+  .img-info {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+  }
+
+  .savings-img-banner {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .checking-img-banner {
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .img-home {
+    height: 60%;
+    object-fit: cover;
+  }
+
+  .img-home-2 {
+    height: 70%;
+    object-fit: cover;
+  }
+
+  .about-main {
+    height: 700px;
+  }
+
+  .img-about {
+    height: 50px;
+    width: 50px;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  .footer {
+    height: 100%;
+  }
+
+  .myinfo {
+    height: 170px;
+  }
+
+  .img-info {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+  }
+
+  .savings-img-banner {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .checking-img-banner {
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .img-home {
+
+    height: 60%;
+    object-fit: cover;
+  }
+
+  .img-home-2 {
+
+    height: 70%;
+    object-fit: cover;
+  }
+
+  .about-main {
+    height: 100hv;
+  }
+
+  .img-about {
+    height: 50px;
+    width: 50px;
+  }
+
+} */
+
+@media only screen and (max-width: 900px) {
+  .footer {
+    height: 100%;
+  }
+
+  .myinfo {
+    height: 300px;
+  }
+
+  .img-info {
+    width: 100vw;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .img-home {
+
+    height: 80%;
+    object-fit: cover;
+  }
+
+  .img-home-2 {
+
+    height: 80%;
+    object-fit: cover;
+  }
+
+  .savings-img-banner {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .checking-img-banner {
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .about-main {
+    height: 800px;
+    margin-top: 0;
+  }
+
+  .img-about {
+    height: 40px;
+    width: 40px;
+  }
+
+  .about-row {
+    margin-top: 0;
+  }
+}
