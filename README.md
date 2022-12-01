@@ -33,6 +33,8 @@ View the website at: http://localhost:3000
 
 View the website on Amazon at: http://44.210.131.94:3000
 
+View API documentation at: http://44.210.131.94:3000/api-docs
+
 ## Screenshots:
 
 <img width="700" src="https://github.com/chung-sun/badbank/blob/main/Screenshot-2022-11-30-235457.png"/>
