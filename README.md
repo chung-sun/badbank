@@ -51,7 +51,7 @@ This project uses express, mongodb, cors, dotenv, firebase, and docker container
 <img width="100" height="30" src="https://img.shields.io/static/v1?label=&message=React&color=blue"/>
 <img width="100" height="30" src="https://img.shields.io/static/v1?label=&message=Node&color=green"/>
 <img width="100" height="30" src="https://img.shields.io/static/v1?label=&message=Docker&color=blue"/>
-<img width="100" height="30" src="https://img.shields.io/static/v1?label=&message=Firebase&color=red"/>
+<img width="100" height="30" src="https://img.shields.io/static/v1?label=&message=Swagger&color=red"/>
 </p>
 
 If you are using docker to run your mongodb, use the following code to create in instance
