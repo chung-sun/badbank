@@ -8,9 +8,6 @@ function Checking () {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
   
-  // check URL
-  // console.log(window.location.hash);
-
   return (
     <div className="checking-main">
         <h1>Get the essentials with BadBank TotalChecking®</h1>

@@ -13,12 +13,10 @@ function Transaction () {
   const [token, setToken] = React.useState(window.localStorage.getItem("token"));
 
   React.useEffect(() => {
-    // const url = `http://localhost:3000/api/accounts/users/finduser/${userEmail}`
     const url = `/api/accounts/users/finduser/${userEmail}`
     fetch(url)
       .then((response) => response.json())
       .then((user) => {
-        //setUser(user);
         setBalance(user.balance);
       })
   },[balance]);
@@ -31,7 +29,6 @@ function Transaction () {
   };
 
   function handleFetch (amount) {
-    // const url = `http://localhost:3000/api/accounts/users/transactions`;
     const url = `/api/accounts/users/transactions`;
         fetch(url, {
           method: "POST",
@@ -127,13 +124,13 @@ function Transaction () {
                 <label className="form-label balance">Balance <button className="btn btn-light" disabled={true}>{FormatCurrency(balance)}</button></label><br/>
                 <label htmlFor="deposit" className="form-label">Transaction Type</label>
                 <select className="form-select" onChange={e => setType(e.target.value)}>
-                  <option defaultValue>Transaction...</option>
+                  <option value="Transaction" defaultValue>Transaction...</option>
                   <option value="Deposit">Deposit</option>
                   <option value="Withdraw">Withdraw</option>
                 </select><br/>
                   <input type="text" className="form-control" id="deposit" placeholder="Amount" value={amount} onChange={handleChange}></input>
                 <br/>
-                <div className="card-link text-center"><button type="submit" className="btn btn-light" disabled={false} onClick={handleTransaction}>{type == "Deposit" ? "Click to Deposit" : type == "Withdraw" ? "Click to Withdraw" : type == "Transfer" ? "Click To Transfer" : "Click to proceed"}</button></div>
+                <div className="card-link text-center"><button type="submit" className="btn btn-light" disabled={(type == "Transaction" || !amount) ? true : false} onClick={handleTransaction}>{type == "Deposit" ? "Click to Deposit" : type == "Withdraw" ? "Click to Withdraw" : type == "Transfer" ? "Click To Transfer" : "Click to proceed"}</button></div>
               </>
               }
       />

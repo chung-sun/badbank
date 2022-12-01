@@ -20,7 +20,6 @@ function App () {
             <Route path="/transaction/" component={Transaction} />
             <Route path="/login/" component={Login} />
             <Route path="/customersetting/" component={CustomerSetting} />
-            <Route path="/alldata/" component={AllData} />
           </div>
           <Info/>
           <Footer/>

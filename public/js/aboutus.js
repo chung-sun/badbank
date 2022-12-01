@@ -8,10 +8,6 @@ function AboutUs () {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
   const { accType, setAccType } = React.useContext(UserContext);
-  
-  // check URL
-//   console.log(window.location.hash);
-//   console.log('from savings : ', accType);
 
   return (
     <div className="about-main">

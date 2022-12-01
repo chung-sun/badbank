@@ -12,6 +12,7 @@ MongoClient.connect(url, {useUnifiedTopology: true}, function (err, client) {
     // connect to badbank databse
     try {
         db = client.db('badbank');
+        console.log('Connected to MongoDB');
     } catch (err) {
         console.log(err);
     }
@@ -56,7 +57,7 @@ function update (email, deposit) {
 
 };
 
-// findOneAndUpdate find and update one user
+// findUpdate find and update one user
 function findUpdate (email, amount) {
     return new Promise((resolve, reject) => {
         const customer = db.collection('users').findOneAndUpdate({"email": email}, {$inc: {"balance": Number(amount)}}, {returnDocument: 'after'}, function (err, user) {

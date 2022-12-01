@@ -17,9 +17,9 @@ function CustomerSetting () {
 
   const [userEmail, setUserEmail] = React.useState(window.localStorage.getItem("email"));
   const [token, setToken] = React.useState(window.localStorage.getItem("token"));
+  const { roleType, setRoleType } = React.useContext(RoleTypeContext);
 
   React.useEffect(() => {
-    // const url = `http://localhost:3000/api/accounts/users/finduser/${userEmail}`
     const url = `/api/accounts/users/finduser/${userEmail}`
     fetch(url)
       .then((response) => response.json())
@@ -32,8 +32,7 @@ function CustomerSetting () {
   },[]);
 
   function handleUpdate () {
-    // const url = `http://localhost:3000/account/users/settings`;
-    const url = `/account/users/settings`;
+    const url = `/api/account/users/settings`;
         fetch(url, {
           method: "POST",
           body: JSON.stringify({
@@ -55,6 +54,7 @@ function CustomerSetting () {
           }
             setEmail(user.email);
             setName(user.name);
+            setRoleType("LoggedIn");
             validate(`Account updated`);
           })
           .catch(error => {
@@ -90,7 +90,7 @@ function CustomerSetting () {
                 <label className="form-label balance">Current Balance <button className="btn btn-light" disabled={true}>{FormatCurrency(balance)}</button></label><br/>
                 <label className="form-label balance">Role Type<button className="btn btn-light" disabled={true}>{role}</button></label><br/>
                 <br/>
-                <button type="submit" className="btn btn-light w-100" id="create-account" disabled={true} onClick={handleUpdate}>Update Account</button>
+                <button type="submit" className="btn btn-light w-100" id="create-account" disabled={false} onClick={handleUpdate}>Update Account</button>
                 <br/>
                 <div className="card-link text-center"><button className="btn btn-light w-100"><a className="card-link account-link" href="#/login/">{isLoggedIn ? 'Logout' : 'Login'}</a></button></div>
               </>

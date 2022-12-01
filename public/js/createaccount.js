@@ -1,7 +1,5 @@
 'use strict';
 
-//const { response } = require("express");
-
 function CreateAccount () {
 
   const [show, setShow] = React.useState(true);
@@ -10,9 +8,6 @@ function CreateAccount () {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
   const [users, setUser] = React.useState('');
-  
-  // check URL
-  //console.log(window.location.hash);
   
   // error message handler
   function validate (error) {
@@ -40,7 +35,6 @@ function CreateAccount () {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        // console.log('data : ', data)
       })
     setShow(false);
     setStatus(true);
@@ -68,13 +62,10 @@ function CreateAccount () {
       validate('Password must have 8 characters minimum');
       return;
     } else {
-        //console.log(users);
         let search = users.find((user) => user.email == email);
         if (search) {
-          //console.log("found user");
           validate("Email already exist")
         } else {
-          //console.log('user not found');
           createUserAccount();
         }
       }
@@ -115,7 +106,7 @@ function CreateAccount () {
                         <label htmlFor="password" className="form-label">Password</label>
                         <input type="password" autoComplete="off" suggested="current-password" className="form-control" id="password" placeholder="Enter password 8 char min." value={password} onChange={e => setPassword(e.currentTarget.value)}></input>
                         <br/>
-                        <button type="submit" className="btn btn-light w-100" id="create-account" disabled={(!name && !email && !password) ? true : false} onClick={handleCheckUser}>Create Account</button>
+                        <button type="submit" className="btn btn-light w-100" id="create-account" disabled={(!name || !email || !password) ? true : false} onClick={handleCheckUser}>Create Account</button>
                         <br/>
                         <div className="card-link text-center"><button className="btn btn-light w-100"><a className="card-link account-link" href="#/login/">{isLoggedIn ? 'Logout' : 'Already have an account?'}</a></button></div>
                       </>

@@ -53,7 +53,6 @@ function Card (props) {
     color: props.statuscolor,
   }
 
-  //console.log('fomr context : ', JSON.stringify(props.transactionHistory));
   return (
     <div className={classes()} style={myStyles}>
       {props.image && <img src={props.image} className="card-img-top ml-auto" alt="login" style={{width: "100px", height: "100px"}}></img>}

@@ -6,6 +6,7 @@ function Login () {
     const [name, setName] = React.useState('');
     const [email, setEmail] = React.useState('');
     const [password, setPassword] = React.useState('');
+    const [userId, setUserId] = React.useState('');
     const [status, setStatus] = React.useState('');
     const [user, setUser] = React.useState({});
     const { roleType, setRoleType } = React.useContext(RoleTypeContext);
@@ -28,7 +29,6 @@ function Login () {
       if (!email) return validate('Email cannot be empty');
       if (!password) return validate('Password cannot be empty');
 
-      // const url = `http://localhost:3000/api/accounts/users/login/${email}/${password}`;
       const url = `/api/accounts/users/login/${email}/${password}`;
       fetch(url)
         .then( async (response) => {
@@ -42,7 +42,9 @@ function Login () {
           setToken(user.accessToken);
           setUser(user);
           setName(user.name);
+          setUserId(user._id);
           window.localStorage.setItem("email", user.email);
+          window.localStorage.setItem("_id", user._id);
           window.localStorage.setItem("token", user.accessToken);
           isLoggedIn = true;
           setShow(false);
