@@ -33,13 +33,13 @@ View the website at: http://localhost:3000
 
 ## Screenshots:
 
-<img width="700" src="https://github.com/chung-sun/badbank-portfolio/blob/main/Screenshot-2022-11-30-235457.png"/>
-<img width="700" src="https://github.com/chung-sun/badbank-portfolio/blob/main/Screenshot-2022-11-30-235611.png"/>
-<img width="700" src="https://github.com/chung-sun/badbank-portfolio/blob/main/Screenshot-2022-11-30-235640.png"/>
-<img width="700" src="https://github.com/chung-sun/badbank-portfolio/blob/main/Screenshot-2022-11-30-235721.png"/>
-<img width="700" src="https://github.com/chung-sun/badbank-portfolio/blob/main/Screenshot-2022-11-30-235745.png"/>
-<img width="700" src="https://github.com/chung-sun/badbank-portfolio/blob/main/Screenshot-2022-11-30-235835.png"/>
-<img width="700" src="https://github.com/chung-sun/badbank-portfolio/blob/main/Screenshot-2022-11-30-235932.png"/>
+<img width="700" src="https://github.com/chung-sun/badbank/blob/main/Screenshot-2022-11-30-235457.png"/>
+<img width="700" src="https://github.com/chung-sun/badbank/blob/main/Screenshot-2022-11-30-235611.png"/>
+<img width="700" src="https://github.com/chung-sun/badbank/blob/main/Screenshot-2022-11-30-235640.png"/>
+<img width="700" src="https://github.com/chung-sun/badbank/blob/main/Screenshot-2022-11-30-235721.png"/>
+<img width="700" src="https://github.com/chung-sun/badbank/blob/main/Screenshot-2022-11-30-235745.png"/>
+<img width="700" src="https://github.com/chung-sun/badbank/blob/main/Screenshot-2022-11-30-235835.png"/>
+<img width="700" src="https://github.com/chung-sun/badbank/blob/main/Screenshot-2022-11-30-235932.png"/>
 
 ## Technology used:
 
