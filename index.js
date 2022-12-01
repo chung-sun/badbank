@@ -44,7 +44,9 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: "http://localhost:3000"
+        url: "http://localhost:3000",
+      },{
+        url: "http://44.210.131.94:3000"
       },
     ]
   },
