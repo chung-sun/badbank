@@ -33,6 +33,11 @@ View the website at: http://localhost:3000
 
 View the website on Amazon at: http://44.210.131.94:3000
 
+<<<<<<< HEAD
+=======
+View API documentation at: http://44.210.131.94:3000/api-docs
+
+>>>>>>> 1ee1b625acbd822c0f4dbfc09e6875bcf2427a63
 ## Screenshots:
 
 <img width="700" src="https://github.com/chung-sun/badbank/blob/main/Screenshot-2022-11-30-235457.png"/>
@@ -53,7 +58,7 @@ This project uses express, mongodb, cors, dotenv, firebase, and docker container
 <img width="100" height="30" src="https://img.shields.io/static/v1?label=&message=React&color=blue"/>
 <img width="100" height="30" src="https://img.shields.io/static/v1?label=&message=Node&color=green"/>
 <img width="100" height="30" src="https://img.shields.io/static/v1?label=&message=Docker&color=blue"/>
-<img width="100" height="30" src="https://img.shields.io/static/v1?label=&message=Firebase&color=red"/>
+<img width="100" height="30" src="https://img.shields.io/static/v1?label=&message=Swagger&color=red"/>
 </p>
 
 If you are using docker to run your mongodb, use the following code to create in instance
